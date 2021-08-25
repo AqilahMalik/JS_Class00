@@ -6,64 +6,44 @@
 
 let a1 = "10"; //string
 let b1 = parseInt(a1); //number
-console.log ('A String to Integer = ' + a1 + " type of "+ typeof(a1));
-console.log ('A Integer to String = ' + b1 + " type of "+ typeof(b1));
+console.log("A String to Integer = " + a1 + " type of " + typeof a1);
+console.log("A Integer to String = " + b1 + " type of " + typeof b1);
 // toString(); function
 
-
 // [3] Use toUpperCase()
-console.log ("hello".toUpperCase());
+console.log("hello".toUpperCase());
 
 // Get the second character out of a string
 // [4] charAt() - returns the character at the specified index
 let word = "Hello";
-console.log (word.charAt(1));
-console.log (word[2]);
+console.log(word.charAt(1));
+console.log(word[2]);
 
 // [5] use concatenation to combine two strings
-console.log ("Hello" + " World!");
+console.log("Hello" + " World!");
 let strOne = "Hello";
 let strTwo = "World";
-console.log (strOne + strTwo);
+console.log(strOne + strTwo);
 
 // [6] Cube numbers
 // Math.pow(x,y) x = powered of, y = the value
 // cube number is the result when a number has been multiplied by itself twice.
 let number = 3;
 power = 2;
-console.log (Math.pow(power,number));
-console.log ("4 squared is " + Math.pow(4,2));
+console.log(Math.pow(power, number));
+console.log("4 squared is " + Math.pow(4, 2));
 
 // cube root = punca kuasa 3
 // Math.cbrt(x)
-console.log ("Cube root of 64 is " + Math.cbrt(64));
+console.log("Cube root of 64 is " + Math.cbrt(64));
 
 // [7] Square root
 // Math.sqrt(x)
 let num = 25;
-console.log ("Square root of 25 is " + Math.sqrt(num));
+console.log("Square root of 25 is " + Math.sqrt(num));
 
 Math.PI;
-Math.pow(4,2);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Math.pow(4, 2);
 
 // CONDITIONALS IN_CLASS_EXERCISE
 //////////////////////////////////////////////////
@@ -72,34 +52,30 @@ Math.pow(4,2);
 let numOne = 50;
 let numtwo = 100;
 
-if (numOne > numtwo){
-    console.log (numOne + " is bigger than " + numtwo);
-} else if (numOne < numtwo){
-    console.log (numOne + " is smaller than " + numtwo);
-}else {
-    console.log (numtwo + " is equal to " + numtwo);
+if (numOne > numtwo) {
+  console.log(numOne + " is bigger than " + numtwo);
+} else if (numOne < numtwo) {
+  console.log(numOne + " is smaller than " + numtwo);
+} else {
+  console.log(numtwo + " is equal to " + numtwo);
 }
-
 
 // Driving Age
 
 let userName = "Sarah";
 let age = 20;
 
-if( age < 16 ){
-    console.log("Sorry " , userName , "!, you can't drive yet!");
-}else{
-    console.log("Drive into the sunset " + userName +" !");
-};
+if (age < 16) {
+  console.log("Sorry ", userName, "!, you can't drive yet!");
+} else {
+  console.log("Drive into the sunset " + userName + " !");
+}
 
-if( age < 16 ){
-    console.log("Sorry " , userName , "!, you can't drive yet!");
-}else if (age > 16){
-    console.log("Drive into the sunset " + userName +" !");
-}else
-    console.log("Drive into the sunset " + userName +" !");;
-
-
+if (age < 16) {
+  console.log("Sorry ", userName, "!, you can't drive yet!");
+} else if (age > 16) {
+  console.log("Drive into the sunset " + userName + " !");
+} else console.log("Drive into the sunset " + userName + " !");
 
 // Using Prompt
 // let userName0 = prompt("Enter your name: ");
@@ -117,24 +93,7 @@ if( age < 16 ){
 //     alert("Drive into the sunset, " + userName1+" !");
 // };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // LOOP IN_CLASS_EXERCISE/////////////////////
-
 
 ///////// [1] Log every number from 0 to 10 /////////
 // starting point : 0
@@ -143,14 +102,14 @@ if( age < 16 ){
 
 // Using WHILE loop
 let m = 0;
-while (m <= 10){ 
-    console.log (m);
-    m += 1 ;
+while (m <= 10) {
+  console.log(m);
+  m += 1;
 }
 
 // Using FOR loop
-for (let m1 = 0; m1 <= 10; m1 += 1 ){
-    console.log(m1);
+for (let m1 = 0; m1 <= 10; m1 += 1) {
+  console.log(m1);
 }
 
 ///////// [2] Log every number from 4 to -16 /////////
@@ -159,13 +118,13 @@ for (let m1 = 0; m1 <= 10; m1 += 1 ){
 // step : - 4
 
 let n = 4;
-while (n >= -16){
-    console.log (n);
-    n -= 4;
+while (n >= -16) {
+  console.log(n);
+  n -= 4;
 }
 
-for (let n1 = 4; n1 >= -16; n1 -= 4){
-    console.log (n1);
+for (let n1 = 4; n1 >= -16; n1 -= 4) {
+  console.log(n1);
 }
 
 //////// [3] Log every fourth number from 8 to 41 ///////
@@ -174,15 +133,14 @@ for (let n1 = 4; n1 >= -16; n1 -= 4){
 // step : + 4
 
 let o = 8;
-while (o <= 41){
-    console.log ("Fourth number from 8 to 41 : " + o);
-    o = o + 4;
+while (o <= 41) {
+  console.log("Fourth number from 8 to 41 : " + o);
+  o = o + 4;
 }
 
-for (let o1 = 8; o1 <= 41; o1 = o1 + 4){
-    console.log ("Fourth number from 8 to 41 : " + o1);
+for (let o1 = 8; o1 <= 41; o1 = o1 + 4) {
+  console.log("Fourth number from 8 to 41 : " + o1);
 }
-
 
 //////// [4] The Classic Fizzbuzz Program ///////
 // Loop from 0 to 100.
@@ -195,14 +153,14 @@ for (let o1 = 8; o1 <= 41; o1 = o1 + 4){
 // step : p++
 
 // reminder kena 0
-for ( p = 0; p <= 100; p++ ){
-    if( (p % 3 == 0) && (p % 5 == 0)){
-        console.log ("Fizzbuzz");
-    }else if ( p % 3 === 0){
-        console.log ("Fizz");
-    }else if (p % 5 === 0){
-        console.log ("buzz");
-    }else{
-        console.log (p);
-    }
+for (p = 0; p <= 100; p++) {
+  if (p % 3 == 0 && p % 5 == 0) {
+    console.log("Fizzbuzz");
+  } else if (p % 3 === 0) {
+    console.log("Fizz");
+  } else if (p % 5 === 0) {
+    console.log("buzz");
+  } else {
+    console.log(p);
+  }
 }
